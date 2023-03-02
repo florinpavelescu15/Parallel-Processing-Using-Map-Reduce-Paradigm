@@ -12,7 +12,7 @@ Map-Reduce.
 
 ## DETALII DE IMPLEMENTARE
 ### Structura data ca argument functiei de thread
-```
+```C
 typedef struct thread_arg                          
 {                                                  
 	vector<string> *files;                         
