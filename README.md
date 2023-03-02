@@ -1,4 +1,4 @@
-Procesare paralela folosind paradigma Map-Reduce
+# Procesare paralela folosind paradigma Map-Reduce
 ALGORITMI PARALELI SI DISTRIBUITI,
 Tema #1,
 Pavelescu Florin, 334CC
@@ -23,7 +23,7 @@ Map-Reduce.
 		    pthread_mutex_t *mutex;                       
 		    pthread_barrier_t *barrier;                   
 		} thread_arg;
-		```
+```
 - `files` = vector ce contine numele fisierelor ce vor fi analizate;
 - `thread_id` = indexul thread-ului curent;
 - `num_mappers` = numarul de thread-uri mapper;
