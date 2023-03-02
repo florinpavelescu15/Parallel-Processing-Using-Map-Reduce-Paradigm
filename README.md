@@ -84,7 +84,7 @@ se face pe baza `thread_id`-ului (`0 <= id_mapper < M <= id reducer < M + R`).
 Folosesc cautarea binara pentru a verifica daca exista un numar natural `x`,
 astfel incat `number = x ^ exp`. Evident, cautarea se face in intervalul `1..number`.
 
-### Functia `main`:
+### Functia `main()`:
 Preiau numarul de thread-uri mapper si numarul de thread-uri reduceri din
 linia de comanda, precum si fisierul ce contine numele fisierelor cu date.
 Citesc numele fisierelor si le adaug in vectorul de stringuri files.
