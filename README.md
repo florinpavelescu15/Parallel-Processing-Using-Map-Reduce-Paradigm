@@ -13,16 +13,16 @@ Map-Reduce.
 ## DETALII DE IMPLEMENTARE
 ### Structura data ca argument functiei de thread
 ```
-		typedef struct thread_arg                          
-		{                                                  
-		    vector<string> *files;                         
-		    int thread_id;                                 
-		    int num_mappers;                               
-		    int num_reducers;                              
-		    vector<vector<vector<int>>> *map_results;	   
-		    pthread_mutex_t *mutex;                       
-		    pthread_barrier_t *barrier;                   
-		} thread_arg;
+typedef struct thread_arg                          
+{                                                  
+	vector<string> *files;                         
+	int thread_id;                                 
+	int num_mappers;                               
+	int num_reducers;                              
+	vector<vector<vector<int>>> *map_results;	   
+	pthread_mutex_t *mutex;                       
+	pthread_barrier_t *barrier;                   
+} thread_arg;
 ```
 - `files` = vector ce contine numele fisierelor ce vor fi analizate;
 - `thread_id` = indexul thread-ului curent;
